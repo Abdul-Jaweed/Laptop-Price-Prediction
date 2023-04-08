@@ -67,3 +67,42 @@ Now he wants you to test the models you have created for Underfitting and Overfi
 ## Web Scrapping Data from Flipkart Credit goes to [KANAV BANSAL](https://www.linkedin.com/in/kanavbansal/) SIR 😊
 
 ### EDA, Feature Engineering and Model Building Credit goes to me [ABDUL JAWEED](https://www.linkedin.com/in/abdul-jaweed-datascientist/) 😅
+
+
+
+**Initial Observations of the Dataset**
+ - MRP column is a Target variable
+ - Feature column is required a lot of Feature Engineering 
+ - Product column is also required a little bit of Feature Engineering 
+ - For our requirement Rating column won't be needed
+
+
+# Exploratory Data Analysis
+
+Exploratory data analysis (EDA) is used by data scientists to analyze and investigate datasets and summarize their main characteristics, often employing data visualization methods.
+
+
+**Findings**
+
+- Data have 720 Rows and 4 Columns
+- MRP need treatment because it contain strings 
+- Likewise we dont use Rating Columns so we dont need to take care of that column
+- We have limited amount of data so we don't to need drop the data in duplicated values or any others
+
+
+
+# Data Preprocessing
+
+Data preprocessing is the process of transforming raw data into a format that can be easily understood and analyzed by a computer. This involves cleaning and transforming the data, integrating data from different sources, reducing the dataset size by eliminating irrelevant data, and discretizing continuous data. Data preprocessing is essential to ensure that the data is accurate, consistent, and in a format suitable for analysis.
+
+
+**Findings**
+
+- Minimum Values of MRP Column is 14990
+- Maximum Values of MRP Column is 434830
+- Mean Values of MRP Column is 81605
+- Median Values of MRP Column is 59990
+- 25% Values of MRP Column is 38996
+- 75% Values of MRP Column is 95240
+
+#### Which means data have to many outlier
