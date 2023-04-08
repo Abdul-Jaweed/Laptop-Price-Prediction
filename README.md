@@ -735,3 +735,38 @@ Bivariate analysis is a statistical technique used to analyze the relationship b
 - Intel Processor are more expensives than others.
 
 
+## Multivariate Analysis
+
+Multivariate analysis is a statistical technique used to analyze data involving multiple variables, which helps researchers to identify relationships, patterns, and trends among the variables. Some common types of multivariate analyses include multiple regression analysis, principal component analysis, factor analysis, cluster analysis, and discriminant analysis. Multivariate analysis is useful in many fields and can provide insights into complex relationships among variables, improving decision-making and identifying important variables.
+
+
+**RAM VS Price VS Warranty**
+
+<p align="center">
+  <img  src="Images\44.PNG">
+</p>
+
+- Warranty and RAM Increase also Laptop Price is Increase.
+
+
+**Disk Size VS Screen size VS Price**
+
+<p align="center">
+  <img  src="Images\45.PNG">
+</p>
+
+- Disk Size and Screen size Increase also Laptop Price is Increase.
+
+
+# Model Building
+
+In summary, the steps involved in building a machine learning model include data preparation, splitting the data into training, validation, and test sets, choosing an appropriate model, training the model on the training data, evaluating the model on the validation and test sets, fine-tuning the model based on the evaluation results, and finally deploying the model for making predictions on new data.
+
+
+
+## Train Test Split
+
+Train-test split is a technique used in machine learning to evaluate the performance of a model on new, unseen data. It involves splitting the available data into two subsets - a training set and a test set. The model is trained on the training set and its performance is evaluated on the test set. This allows the model to learn patterns from the training data and be evaluated on how well it can generalize to new data. The goal of train-test split is to ensure that the model is not overfitting the training data and can perform well on new data. Typically, around 70-80% of the data is used for training, and the remaining 20-30% is used for testing. Cross-validation is another technique that can be used in combination with train-test split to further evaluate the model's performance.
+
+
+  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=51)
