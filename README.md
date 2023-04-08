@@ -652,3 +652,31 @@ Bivariate analysis is a statistical technique used to analyze the relationship b
 </p>
 
 - Price depend on Companies premium laptops
+
+
+**RAM Type VS RAM**
+
+<p align="center">
+  <img  src="Images\35.PNG">
+</p>
+
+
+- DDR4 RAM Type Lead the Market
+
+
+**RAM VS Price**
+
+<p align="center">
+  <img  src="Images\36.PNG">
+</p>
+
+- RAM Size increase also Price increase.
+
+
+**Warranty VS Price**
+
+<p align="center">
+  <img  src="Images\37.PNG">
+</p>
+
+- Warranty depends on Laptop Prices.
