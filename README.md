@@ -22,7 +22,11 @@ Musk wants to find out some relation between features of a Laptop(eg:- RAM, OS, 
 To solve this problem he already asked his Data Engineering team (from Twitter 🐥🤭) to collect laptop data from various competitors.
 
 
-![elon boi](https://github.com/Abdul-Jaweed/Laptop-Price-Prediction/blob/main/Images/elon1.PNG)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/Abdul-Jaweed/Laptop-Price-Prediction/blob/main/Images/elon1.PNG">
+</p>
+
+
 
 Now he needs your (i.e Data Scientist’s) help to solve the following problem. 🥰
 
