@@ -188,3 +188,467 @@ Data transformation is the process of converting data from one format or scale t
 - After applying few data transformation log and power will perform better
 - I did some parameter tuning in power transformation to make it better
 - Conclusion i choose Log Transformation for my MRP Column
+
+
+
+**Outlier**
+
+An outlier is an observation or data point that is significantly different from other observations in a dataset. In other words, an outlier is a value that is either much larger or much smaller than the other values in the dataset.
+
+Outliers can occur for various reasons, such as measurement errors, data entry mistakes, or they may represent true extreme values in the population. However, outliers can have a significant impact on statistical analyses, as they can distort the results, affecting measures of central tendency, variability, and correlation.
+
+Therefore, it is important to identify and handle outliers appropriately in data analysis. Some common techniques for handling outliers include capping or trimming outliers, imputing missing values, or using robust statistical methods that are less sensitive to outliers. Ultimately, the choice of technique will depend on the nature of the data and the objectives of the analysis.
+
+
+
+**Capping Outlier**
+
+Capping outliers means setting a limit to extreme values in a dataset. It helps to reduce the impact of outliers on the analysis and make the dataset more representative of the general population. However, caution should be exercised as it may mask important information in the data and may not be appropriate in all situations. Various methods are used to cap outliers, depending on the data and objectives of the analysis.
+
+
+<p align="center">
+  <img  src="Images\11.png">
+</p>
+
+### Trimming
+
+Trimming outliers means removing extreme values from a dataset by setting a threshold value and deleting any values that exceed this limit. It helps to remove the impact of outliers on the analysis and make the dataset more representative of the general population. However, caution should be exercised as it may also mask important information in the data and may not be appropriate in all situations. Various methods are used to trim outliers, depending on the data and objectives of the analysis.
+
+<p align="center">
+  <img  src="Images\12.png">
+</p>
+
+**Finding**
+
+Since Trying both Capping and Trimming Technique but didn't effect on distribtion so I decided so use capping instead trimming because of less data.
+
+
+
+# Feature Engineering
+
+Feature engineering is the process of transforming raw data into useful features that can be used to train machine learning models. It involves selecting and extracting relevant data features, as well as transforming and scaling them to improve model performance. Feature engineering requires domain knowledge, creativity, and analytical skills and involves techniques such as one-hot encoding, scaling, feature selection, and feature extraction. The goal is to identify and select relevant features while avoiding overfitting the model to the training data. It is a critical component of the machine learning pipeline to develop accurate and robust predictive models.
+
+
+
+**Findings**
+
+- In Product Column we can fetch Brand Name and Ram Size 
+- But in Feature we can fetch more Data regarding our project
+ 
+ **My Observation I'm thinking to Extract all this data mention below**
+
+ 1. -  Brand Name  
+ 2. -  RAM Type    
+ 3. -  RAM Size    
+ 4. -  OS
+ 5. -  Disk Type   
+ 6. -  Disk Size   
+ 7. - Processor
+ 8. -  GPU 
+ 9. -  Warranty
+ 10. - Screen Size
+
+
+
+ **Brand Name**
+
+A laptop brand name refers to the name of the company that manufactures and sells laptops. There are numerous laptop brands in the market, each with its unique features, design, and price range. Popular laptop brands include Apple, Dell, HP, Lenovo, Acer, ASUS, MSI, Razer, Samsung, and LG. Each of these brands has its strengths and weaknesses, and consumers often choose a laptop brand based on their specific needs and preferences.
+
+**Finding**
+
+- To prevent outlier less brand values store into Others Variable
+
+
+
+**Operating System (OS)**
+
+An operating system (OS) is a software that manages a computer's hardware and provides services for running applications. It serves as a bridge between the hardware and the software, enabling users to interact with the computer and its resources. Examples of popular operating systems for laptops include Windows, macOS, and Linux. Each operating system has its unique interface, features, and compatibility with applications. The operating system manages tasks such as memory allocation, process management, file systems, and security. It also provides a platform for developers to create and run applications that work seamlessly with the hardware and other software components. The choice of operating system can significantly impact a laptop's performance, usability, and security, and it's essential to choose the one that best fits your needs and preferences.
+
+
+**Finding**
+
+- Windows Laptops are more in compare to others 
+- Apple Laptops is less because of expensive
+- Others maybe linux or andriod OS
+
+
+
+**RAM Type**
+
+Laptop RAM (Random Access Memory) type refers to the type of memory technology used in a laptop to temporarily store data that the CPU (Central Processing Unit) needs to access quickly. There are several types of laptop RAM available in the market, including DDR (Double Data Rate) SDRAM (Synchronous Dynamic Random Access Memory), DDR2 SDRAM, DDR3 SDRAM, DDR4 SDRAM, and DDR5 SDRAM. Each type of RAM offers different levels of speed, power consumption, and capacity. DDR4 SDRAM is currently the most commonly used type of RAM in laptops, offering a good balance of speed, power efficiency, and capacity. When buying a laptop, it's essential to consider the type and amount of RAM the laptop has, as it can significantly impact its performance and multitasking capabilities.
+
+
+**Findings**
+
+- To prevent overfitting less ram type values store into Others Variable
+
+
+
+
+**RAM**
+
+Laptop RAM (Random Access Memory) is a type of computer memory that stores data temporarily and allows the CPU (Central Processing Unit) to access it quickly. RAM plays a crucial role in the performance of a laptop, as it helps to determine how many applications and processes the laptop can handle simultaneously. The amount of RAM in a laptop can range from 2GB to 32GB or more, and it can be upgraded in some cases. The speed of the RAM, measured in MHz or GHz, also affects the laptop's performance. Faster RAM allows for quicker data transfer and improves overall system responsiveness. When purchasing a laptop, it's important to consider the amount and speed of the RAM to ensure optimal performance for your specific needs.
+
+
+**Findings**
+
+- 8 GB RAM Laptops are more in compare to others. 
+- Two laptops RAM size is 128 GB. It will affect the ML Model so I decided so merge into 32 GB RAM size.
+
+
+**Disk Type**
+
+Disk type refers to the physical storage device used in a laptop or other computing device to store data, programs, and other digital content. There are two main types of disk storage: hard disk drives (HDD) and solid-state drives (SSD).
+
+HDDs are the traditional type of disk storage, and they consist of spinning disks that store data on magnetic surfaces. HDDs are generally cheaper and offer larger storage capacities than SSDs, but they are also slower and more prone to failure due to their mechanical components.
+
+SSDs are a newer type of disk storage that uses flash memory to store data. SSDs are faster and more reliable than HDDs, and they consume less power, which can result in longer battery life for laptops. However, SSDs are generally more expensive than HDDs, and they offer smaller storage capacities.
+
+In recent years, hybrid drives have also become available, which combine the large storage capacity of an HDD with the speed and reliability of an SSD. Hybrid drives use a smaller amount of solid-state memory as a cache to speed up frequently accessed data, while storing less frequently accessed data on the traditional spinning disk.
+
+When choosing a laptop, the type of disk storage is an important factor to consider, as it can affect the speed, performance, and cost of the laptop. If the user needs large amounts of storage at a lower cost, an HDD may be a better choice, while if speed and reliability are more important, an SSD may be a better choice.
+
+
+
+**Disk Size**
+
+Disk size refers to the amount of storage space available on a laptop's hard drive or solid-state drive (SSD). The disk size is typically measured in gigabytes (GB) or terabytes (TB).
+
+The disk size is an important consideration when choosing a laptop, as it determines how much data the laptop can store. The amount of storage required will depend on the user's needs, such as whether they will be storing large files, such as photos or videos, or mainly using cloud storage.
+
+Laptop disk sizes can vary widely, with smaller laptops typically offering 128GB or 256GB of storage, while larger laptops may offer 1TB or more. In recent years, it has become increasingly common for laptops to offer both a solid-state drive (SSD) and a traditional hard drive (HDD), with the SSD used for the operating system and frequently accessed files, while the HDD is used for storing larger files.
+
+It is important to consider the amount of storage required when choosing a laptop, as it can affect the performance and usability of the device. A laptop with insufficient storage space may become slow and sluggish, while a laptop with too much storage space may be more expensive than necessary.
+
+
+**Findings**
+
+- 512 GB Storage Size are more in compare to others.
+- To prevent Outlier I merge extreme values to thers values.
+
+
+**Processor**
+
+A laptop processor is the main component of a computer that carries out instructions and performs calculations necessary for various tasks. The processor is also known as the Central Processing Unit (CPU), and it is responsible for executing programs and running the operating system.
+
+There are two major manufacturers of laptop processors, Intel and AMD. Intel's processors are generally considered to be the industry standard and are used in many laptops. AMD's processors are less common but are becoming increasingly popular.
+
+Processors are characterized by several key features, including clock speed (measured in GHz), number of cores (which affects multitasking performance), cache size (which affects data transfer speeds), and power consumption. The higher the clock speed and number of cores, the more powerful the processor, but this also tends to result in higher power consumption and heat output.
+
+In recent years, laptop processors have become more efficient and powerful, making it possible to perform demanding tasks such as gaming and video editing on a laptop. However, desktop processors still tend to be more powerful due to their larger size and better cooling capabilities.
+
+
+**Findings**
+
+- Majorly Two categories of Processor so i decided to categorize then. 
+
+
+**Graphical Processing Unit (GPU)**
+
+A laptop GPU (Graphics Processing Unit) is a specialized processor that is responsible for rendering graphics and images on a laptop. The GPU is designed to work in conjunction with the CPU to provide the necessary processing power for various visual applications.
+
+There are two main manufacturers of laptop GPUs, NVIDIA and AMD. NVIDIA is the industry leader and its GPUs are used in a wide range of laptops, while AMD's GPUs are less common but are becoming more popular.
+
+The performance of a laptop GPU is measured in terms of its clock speed, memory size, memory speed, and number of CUDA cores or stream processors. The clock speed is the frequency at which the GPU operates, while the memory size and speed determine the amount and speed of data that can be processed by the GPU. The number of CUDA cores or stream processors determines the number of parallel processing units within the GPU.
+
+A powerful laptop GPU is essential for tasks such as gaming, video editing, and 3D modeling, as these applications require a lot of graphical processing power. However, a powerful GPU also tends to consume more power and generate more heat, which can affect battery life and laptop performance.
+
+In recent years, laptop GPUs have become more efficient and powerful, making it possible to perform demanding visual tasks on a laptop. However, for the most demanding tasks, a desktop GPU still tends to be more powerful due to its larger size and better cooling capabilities.
+
+
+**Findings**
+
+- Majorly Laptops and Integrated Graphics. 
+- AMD GPU is more as compare to others.
+- NVIDIA GPU is less just because of expensive.
+- Intel are play majorly Integrated Graphics.
+
+
+
+**Warranty**
+
+A laptop warranty is a guarantee that the manufacturer provides to cover defects in materials and workmanship for a specific period of time. The warranty period varies by manufacturer, but it typically ranges from one to three years.
+
+The warranty covers the cost of repairing or replacing parts that fail due to defects in materials or workmanship. However, it does not cover damage caused by accidents, misuse, or normal wear and tear. Some warranties may also exclude certain types of components, such as batteries or accessories.
+
+To make a claim under the warranty, the owner of the laptop must contact the manufacturer or its authorized service provider. The manufacturer will then diagnose the problem and either repair or replace the defective part.
+
+It is important to note that warranties may vary in terms of what they cover and the extent of the coverage. Some warranties may include additional services, such as technical support or on-site repairs, while others may have limitations or exclusions.
+
+It is recommended to read the terms and conditions of the warranty carefully before purchasing a laptop, and to consider purchasing an extended warranty if one is available, especially if the laptop is used for critical work or if it is an expensive model.
+
+
+
+**Findings**
+
+- Majorly Laptops comes 1 Year of warranty
+- 3 Year Warranty Laptops are only 8 so I decided to marge into 2 Year Warranty Laptops just because of preventy Outlier.
+
+
+
+**Screen Size**
+
+Laptop screen size refers to the diagonal measurement of the display screen, usually measured in inches. Screen size is an important factor to consider when choosing a laptop, as it can affect the user's comfort and the laptop's portability.
+
+Laptop screen sizes typically range from 11 inches to 17 inches, with the most common sizes being 13 inches, 14 inches, and 15 inches. Smaller screens are generally more portable and lightweight, while larger screens offer more screen real estate and are better suited for tasks such as video editing or gaming.
+
+Screen resolution is another important factor to consider, as it affects the clarity and sharpness of the displayed images. Higher resolutions result in sharper and more detailed images, but they also tend to be more demanding on the laptop's processing power and battery life.
+
+In recent years, laptop screens have become more advanced and innovative, with features such as touchscreens, high refresh rates, and HDR support. These features can enhance the user's experience and productivity, but they also tend to increase the cost of the laptop.
+
+When choosing a laptop, it is important to consider the user's needs and preferences, as well as their budget. A larger screen may be more comfortable for some users, while others may prioritize portability and opt for a smaller screen.
+
+
+**Findings**
+
+- 15.6 Inches laptops are more in compare to others
+- In Screensize Column are they too many extreme value so I decided to cap into 14.0 and 15.6 Inches
+
+
+**Noted :** 
+
+Price Column are applied by Log Transformation
+
+
+
+# Data Visualization 
+
+Data Visualization is the graphical representation of data and information, which is an important part of data analysis. It allows analysts and stakeholders to quickly understand complex data and identify patterns and trends. There are many different types of data visualizations, including bar charts, line charts, scatter plots, heatmaps, pie charts, box plots, histograms, area charts, tree maps, bubble charts, and network diagrams. To create data visualizations, you can use various tools and libraries, such as Matplotlib, Seaborn, Plotly, and Tableau. When creating data visualizations, it is important to choose the appropriate chart type based on the type of data and the message you want to convey, and to use appropriate labels, titles, and colors to ensure the visualization is clear and easy to understand.
+
+
+
+## Univariate Analysis
+
+Univariate analysis is a statistical technique used to examine and summarize a single variable at a time. It involves analyzing the distribution, central tendency, and variability of the variable through measures such as frequency distribution, measures of central tendency, measures of dispersion, histograms, and box plots. Univariate analysis is an essential step in data analysis, providing a basic understanding of the data before proceeding to more complex multivariate analyses.
+
+
+**Brand Name**
+
+
+<p align="center">
+  <img  src="Images\11.png">
+</p>
+
+<p align="center">
+  <img  src="Images\12.png">
+</p>
+
+
+**Operating System (OS)**
+
+<p align="center">
+  <img  src="Images\13.png">
+</p>
+
+<p align="center">
+  <img  src="Images\14.png">
+</p>
+
+**Ram Type**
+
+<p align="center">
+  <img  src="Images\15.png">
+</p>
+
+<p align="center">
+  <img  src="Images\16.png">
+</p>
+
+**RAM**
+
+<p align="center">
+  <img  src="Images\17.png">
+</p>
+
+<p align="center">
+  <img  src="Images\18.png">
+</p>
+
+**Processor**
+
+<p align="center">
+  <img  src="Images\19.png">
+</p>
+
+<p align="center">
+  <img  src="Images\20.png">
+</p>
+
+**Graphics Processing Unit (GPU)**
+
+<p align="center">
+  <img  src="Images\21.png">
+</p>
+
+<p align="center">
+  <img  src="Images\22.png">
+</p>
+
+**Warranty**
+
+<p align="center">
+  <img  src="Images\23.png">
+</p>
+
+<p align="center">
+  <img  src="Images\24.png">
+</p>
+
+**Screen Size**
+
+<p align="center">
+  <img  src="Images\25.png">
+</p>
+
+<p align="center">
+  <img  src="Images\26.png">
+</p>
+
+**Disk Type**
+
+<p align="center">
+  <img  src="Images\27.png">
+</p>
+
+<p align="center">
+  <img  src="Images\28.png">
+</p>
+
+**DISK SIZE**
+
+<p align="center">
+  <img  src="Images\29.png">
+</p>
+
+<p align="center">
+  <img  src="Images\30.png">
+</p>
+
+**Price**
+
+<p align="center">
+  <img  src="Images\31.png">
+</p>
+
+<p align="center">
+  <img  src="Images\32.png">
+</p>
+
+
+<p align="center">
+  <img  src="Images\33.png">
+</p>
+
+
+## Findings
+
+
+**Brand Name**
+
+- Asus lead the laptop market and the second lead is Lenovo.
+- The Market Share of Asus is 35% and lenovo is 37%.
+- Dell, HP and Acer are holding 22% of Market share.
+- Some Laptop Market share is less because its only target premium gaming market.
+- Apple Market share is 3%. Maybe of expensive.
+
+
+**Operating System (OS)**
+
+- As always windows operating system are leading in the market
+- Apple market share is second. and others maybe linux or Andriod OS.
+- Windows OS is holding 96% of Market share.
+- Apple Market share is 3%. Maybe of expensive.
+- Others OS like linux and andriod maybe more are also holding 3% Market Share.
+
+
+**Ram Type**
+
+- DDR4 Ram is leading the market.
+- DDR5 Ram is second lead just because of recently launch or expensive.
+- DDR4 Ram is holding 78% of Market share.
+- DDR5 Ram also becoming quiet popular and holding market share is 13%.
+- Others Ram like DDR4x, DDR5x and LPDDR5 are also holding 8% of Market share.
+
+
+**RAM**
+
+- 8 GB Ram are leading the market.
+- second most popular is 16 GB Ram.
+- 56% of Market share holding by 8 GB Ram just because of base variant of laptop come with 8GB of Ram Size.
+- 16 Ram Market share is 37% it also quiet popular.
+- Some low cost Laptop comes with 4 GB of Ram and Premium Gaming Laptop comes with 32 GB of Ram Size.
+
+
+**Processor**
+
+- Intel is still leading the Laptop Market.
+- Second lead of the Laptop market is AMD.
+- Others comes with Snapdragon processor.
+- Intel Processor Market share is 54 %.
+- AMD Processor Market share is 43%.
+
+
+**Graphics Processing Unit (GPU)**
+
+- AMD is leading the GPU market 
+- NVIDIA is also lead the GPU market
+- Others is Top lead of the GPU Market just because its less costly and its Integrated GPUs.
+- AMD GPU Market share is 22% just because its less expensive compare to NVIDIA.
+- NVIDIA Market share is 2% because its expensiveness.
+
+
+**Warranty**
+
+- Majorly Laptop Companies provide only 1 year of Warranty.
+- Premium Laptop provide 2 years of Warranty.
+- Apple Laptop also comes from 2 years Warranty.
+- Also if we pay more Laptop Warranty comes with 2 or more years of Warranty.
+- 77% of Laptop Market share hold by 1st year Warranty rest others.
+
+
+**Screen Size**
+
+- 15.6 Inches of Screen Size of Laptop lead the Market.
+- 14.0 Inches of Screen Size of Laptop Second lead the Market.
+- 83% of Laptop Market share hold by 15.6 Inches Screen size.
+- 17% of Laptop Market share hold by 15.6 Inches Screen size.
+- Others Screen size like 13.0, 15.0 and 17.0 and etc also Laptops comes.
+
+
+**Disk Type**
+
+- SSD Disk Type lead the Laptop Market.
+- HDD Disk Type is a second lead of Laptop Market.
+- 93% of Laptop Market share is hold by SSD Disk type.
+- 7% of Laptop Market share is hold by HDD Disk type.
+- HDD Disk type is lossing the market because its low speed.
+
+
+**Disk Size**
+
+- 512 GB of Disk Size is leading the Laptop Market.
+- 1024 GB of Disk Size is second lead of the Laptop Market.
+- Others like also 256 GB and 128 GB is holding the Laptop Market share.
+- 52% of Laptop Market share is hold by 512 GB.
+- 32% of Laptop Market share is hold by 1024 GB.
+
+
+**Price**
+
+- Mid Range of Laptop is holding More Market share.
+- Premium Range of Laptop Market share is Less just because of its expensive.
+
+
+
+## Bivariate Analysis
+
+Bivariate analysis is a statistical technique used to analyze the relationship between two variables. It involves examining the distribution of each variable and the relationship between the two variables. Common techniques used in bivariate analysis include scatter plots, correlation analysis, t-tests, and chi-squared tests. Bivariate analysis is useful for exploring relationships among variables and is often the first step in statistical analysis.
+
+
+**Brand Name VS Price**
+
+<p align="center">
+  <img  src="Images\34.png">
+</p>
+
+- Price depend on Companies premium laptops
