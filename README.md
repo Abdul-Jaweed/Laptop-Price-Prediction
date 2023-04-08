@@ -59,7 +59,9 @@ Now he wants you to test the models you have created for Underfitting and Overfi
  - See if applying cross validation helps improve your models performance.
 
 
- # Dataset [link](Dataset\laptop_details.csv)
+# Dataset [link](Dataset\laptop_details.csv)
+
+# Tableau [Dashboard](https://public.tableau.com/app/profile/abdul.jaweed6647/viz/LaptopMarket/Story1?publish=yes)
 
 ## Web Scrapping Data from Flipkart Credit goes to [KANAV BANSAL](https://www.linkedin.com/in/kanavbansal/) SIR 😊
 
