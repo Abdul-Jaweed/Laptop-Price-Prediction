@@ -11,7 +11,9 @@ In 2018, Walmart acquired a 77% stake in Flipkart for $16 billion, making it the
 
 Elon Musk has started his own laptop company (Tesla Laptop) in India. He wants to give tough fights to big companies like Apple, Alienware, HP etc.
 
-![elon boi](https://github.com/Abdul-Jaweed/Laptop-Price-Prediction/blob/main/Images/elon.PNG)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/Abdul-Jaweed/Laptop-Price-Prediction/blob/main/Images/elon.PNG">
+</p>
 
 He does not know how to estimate the price of laptops his company creates. In this competitive laptop market you cannot simply assume things. 
 
