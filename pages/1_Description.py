@@ -31,7 +31,7 @@ In 2018, Walmart acquired a 77% stake in Flipkart for $16 billion, making it the
 Elon Musk has started his own laptop company (Tesla Laptop) in India. He wants to give tough fights to big companies like Apple, Alienware, HP etc.""")
 
 
-st.image("Images\elon.PNG")
+st.image("elon.PNG")
 
 
 
@@ -44,7 +44,7 @@ Musk wants to find out some relation between features of a Laptop(eg:- RAM, OS, 
 To solve this problem he already asked his Data Engineering team (from Twitter 🐥🤭) to collect laptop data from various competitors.""")
 
 
-st.image("Images\elon1.PNG")
+st.image("elon1.PNG")
 
 st.markdown(
     """
