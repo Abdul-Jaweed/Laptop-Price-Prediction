@@ -138,4 +138,53 @@ Data transformation is the process of converting data from one format or scale t
 
 **Log transformation** converting data to a logarithmic scale to reduce the magnitude of extreme values and make the distribution more symmetric.
 
+<p align="center">
+  <img  src="Images\3.png">
+</p>
+
+
+<p align="center">
+  <img  src="Images\4.png">
+</p>
+
+
+
 **Reciprocal** transformation involves taking the reciprocal of each value in a dataset to reduce the effect of extreme values and make the distribution of the data more symmetric. It is particularly useful when the data has a positive skew, but has limitations and should be used with caution.
+
+<p align="center">
+  <img  src="Images\5.png">
+</p>
+
+
+<p align="center">
+  <img  src="Images\6.png">
+</p>
+
+**Square root transformation** involves taking the square root of each value in a dataset to reduce the effect of extreme values and make the distribution of the data more symmetric. It is often used when the data has a positive skew, but its effectiveness depends on the specific dataset and analysis goals.
+
+<p align="center">
+  <img  src="Images\7.png">
+</p>
+
+
+<p align="center">
+  <img  src="Images\8.png">
+</p>
+
+**Power transformation** - raising data to a power to adjust the distribution and reduce the impact of outliers.
+
+
+<p align="center">
+  <img  src="Images\9.png">
+</p>
+
+<p align="center">
+  <img  src="Images\10.png">
+</p>
+
+
+**Findings**
+
+- After applying few data transformation log and power will perform better
+- I did some parameter tuning in power transformation to make it better
+- Conclusion i choose Log Transformation for my MRP Column
