@@ -11,7 +11,7 @@ In 2018, Walmart acquired a 77% stake in Flipkart for $16 billion, making it the
 
 Elon Musk has started his own laptop company (Tesla Laptop) in India. He wants to give tough fights to big companies like Apple, Alienware, HP etc.
 
-![elon boi](https://github.com/Abdul-Jaweed/Laptop-Price-Prediction/blob/main/Images/elon.PNG)
+                       ![elon boi](https://github.com/Abdul-Jaweed/Laptop-Price-Prediction/blob/main/Images/elon.PNG)
 
 He does not know how to estimate the price of laptops his company creates. In this competitive laptop market you cannot simply assume things. 
 
@@ -20,7 +20,7 @@ Musk wants to find out some relation between features of a Laptop(eg:- RAM, OS, 
 To solve this problem he already asked his Data Engineering team (from Twitter 🐥🤭) to collect laptop data from various competitors.
 
 
-![elon boi](https://github.com/Abdul-Jaweed/Laptop-Price-Prediction/blob/main/Images/elon1.PNG)
+                     ![elon boi](https://github.com/Abdul-Jaweed/Laptop-Price-Prediction/blob/main/Images/elon1.PNG)
 
 Now he needs your (i.e Data Scientist’s) help to solve the following problem. 🥰
 
