@@ -25,7 +25,7 @@ st.markdown(
 )
 
 space()
-# st.write("#### Check my [Portfolio](https://abdul-jaweed.github.io/my-portfolio-website/)")
+
 st.write("#### Connect me on [LinkedIn](https://www.linkedin.com/in/abdul-jaweed-datascientist/)")
 st.write("#### Follow me on [GitHub](https://github.com/Abdul-Jaweed)")
 st.write("#### Follow me on [Medium](https://medium.com/@abduljaweed)")
