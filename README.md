@@ -70,6 +70,12 @@ Now he wants you to test the models you have created for Underfitting and Overfi
 
 
 
+<p align="center">
+  <img width="460" height="300" src="Images\0.PNG">
+</p>
+
+
+
 **Initial Observations of the Dataset**
  - MRP column is a Target variable
  - Feature column is required a lot of Feature Engineering 
@@ -106,3 +112,20 @@ Data preprocessing is the process of transforming raw data into a format that ca
 - 75% Values of MRP Column is 95240
 
 #### Which means data have to many outlier
+
+
+### After checking the distribution of the MRP column
+**Findings**
+
+- Like i previously mension we have too many Outliers
+- Instead of removing values we have to use Data transformation to handle Outliers
+
+
+### Data transformation
+
+Data transformation is the process of converting data from one format or scale to another to make it suitable for analysis. It can involve changing the distribution of data, scaling or normalizing values, converting categorical data to numerical data, and more.
+
+
+**Log transformation** converting data to a logarithmic scale to reduce the magnitude of extreme values and make the distribution more symmetric.
+
+**Reciprocal** transformation involves taking the reciprocal of each value in a dataset to reduce the effect of extreme values and make the distribution of the data more symmetric. It is particularly useful when the data has a positive skew, but has limitations and should be used with caution.
