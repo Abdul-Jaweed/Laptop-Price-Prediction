@@ -648,7 +648,7 @@ Bivariate analysis is a statistical technique used to analyze the relationship b
 **Brand Name VS Price**
 
 <p align="center">
-  <img  src="Images\34.png">
+  <img  src="Images\34.PNG">
 </p>
 
 - Price depend on Companies premium laptops
