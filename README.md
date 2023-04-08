@@ -892,5 +892,20 @@ print(models)
 </p>
 
 
+## Pickle
+
+Pickle is a Python module used for serializing and deserializing Python objects. It allows you to convert a Python object into a byte stream, which can be saved to a file or transferred over a network. Pickle can handle almost any Python object, including complex data structures like lists, dictionaries, and classes. The serialized object can be stored as a binary file or as a text file using the JSON format. The process of serializing and deserializing Python objects with Pickle is called pickling and unpickling, respectively. Pickle is a powerful tool for saving and loading models in machine learning, as it allows you to save the state of the model and reuse it later without having to retrain the model. However, it is important to note that Pickle can be unsafe if used improperly, as it can execute arbitrary code from the serialized objects.
 
 
+In the context of machine learning, pickling refers to the process of saving a trained machine learning model to disk so that it can be loaded and reused later without having to retrain the model from scratch. This is particularly useful when dealing with large and complex models that can take a long time to train. The Pickle module in Python is often used for this purpose, as it can serialize most Python objects, including machine learning models. Once the model is pickled, it can be saved as a binary file, and later loaded back into memory using the unpickling process. Pickling machine learning models is a common practice in the industry, as it allows for easy deployment and sharing of models across different systems and platforms. However, it is important to be aware of potential issues with pickling, such as compatibility across different versions of Python, and security risks associated with unpickling untrusted data.
+
+
+
+```python
+import pickle
+
+pickle.dump(df,open('df.pkl','wb'))
+pickle.dump(pipe2,open('pipe.pkl','wb'))
+```
+
+Thanks for Visiting if you like my work plz give a starts to my github repo
