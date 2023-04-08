@@ -1,4 +1,5 @@
-sklearn
+# sklearn
 streamlit
 numpy
 matplotlib
+scikit-learn
