@@ -680,3 +680,58 @@ Bivariate analysis is a statistical technique used to analyze the relationship b
 </p>
 
 - Warranty depends on Laptop Prices.
+
+
+**Disk Type VS Price**
+
+<p align="center">
+  <img  src="Images\38.PNG">
+</p>
+
+- SSD are more expensive than HDD.
+
+
+**Disk Size VS Price**
+
+<p align="center">
+  <img  src="Images\39.PNG">
+</p>
+
+- RAM Size depends on Laptops Price.
+
+
+**Operating System (OS) VS Price**
+
+<p align="center">
+  <img  src="Images\40.PNG">
+</p>
+
+- MAC OS Laptops are more expensive than others.
+
+
+**Screen Size VS Price**
+
+<p align="center">
+  <img  src="Images\41.PNG">
+</p>
+
+- Screen Size depends on Prices.
+
+**Graphics Processing Units (GPU) VS Price**
+
+<p align="center">
+  <img  src="Images\42.PNG">
+</p>
+
+- NVIDIA GPUs are Expensive than others.
+
+
+**Processor VS Price**
+
+<p align="center">
+  <img  src="Images\43.PNG">
+</p>
+
+- Intel Processor are more expensives than others.
+
+
