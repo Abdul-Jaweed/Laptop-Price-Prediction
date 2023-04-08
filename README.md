@@ -47,9 +47,6 @@ Kindly refer below mentioned notebook to see how the data was scraped by Musk’
 [Click here to get the code for web scraping and cleaning the Flipkart data](https://github.com/bansalkanav/Machine_Learning_and_Deep_Learning/tree/master/Module%206%20-%20Case%20Studies/8.%20Regex%20and%20Webscrapping/Web%20Scrapping)
 
 
-
-
-
 # Sprint - 2 (ML Model Tuning)
 
 Congratulations! Elon Musk is happy with your models and insights that you have shared in the previous requirements. 
@@ -112,6 +109,19 @@ Data preprocessing is the process of transforming raw data into a format that ca
 - 75% Values of MRP Column is 95240
 
 #### Which means data have to many outlier
+
+
+**Visualizing Density PLot in MRP Column for checking the Distribution**
+
+<p align="center">
+  <img  src="Images\1.png">
+</p>
+
+**Visualizing BoxPLot in MRP Column for checking the Outlier**
+
+<p align="center">
+  <img  src="Images\2.png">
+</p>
 
 
 ### After checking the distribution of the MRP column
