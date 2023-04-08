@@ -885,7 +885,7 @@ from sklearn.utils import shuffle
 reg = LazyRegressor(verbose=0,ignore_warnings=False, custom_metric=None )
 models,predictions = reg.fit(X_train, X_test, y_train, y_test)
 print(models)
-
+```
 
 <p align="center">
   <img  src="Images\lazy.PNG">
