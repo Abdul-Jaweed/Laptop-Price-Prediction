@@ -769,4 +769,4 @@ In summary, the steps involved in building a machine learning model include data
 Train-test split is a technique used in machine learning to evaluate the performance of a model on new, unseen data. It involves splitting the available data into two subsets - a training set and a test set. The model is trained on the training set and its performance is evaluated on the test set. This allows the model to learn patterns from the training data and be evaluated on how well it can generalize to new data. The goal of train-test split is to ensure that the model is not overfitting the training data and can perform well on new data. Typically, around 70-80% of the data is used for training, and the remaining 20-30% is used for testing. Cross-validation is another technique that can be used in combination with train-test split to further evaluate the model's performance.
 
 
-  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=51)
+### X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=51)
