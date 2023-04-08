@@ -71,7 +71,7 @@ Now he wants you to test the models you have created for Underfitting and Overfi
 
 
 <p align="center">
-  <img width="460" height="300" src="Images\0.PNG">
+  <img  src="Images\0.PNG">
 </p>
 
 
