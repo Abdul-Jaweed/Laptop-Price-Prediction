@@ -61,7 +61,7 @@ Now he wants you to test the models you have created for Underfitting and Overfi
 
 # Flipkart Laptop [Dataset](Dataset\laptop_details.csv)
 
-# Tableau [Dashboard](https://public.tableau.com/app/profile/abdul.jaweed6647/viz/LaptopMarket/Story1?publish=yes)
+# Tableau [Dashboard](https://www.kaggle.com/datasets/abduljaweed/flipkart-laptop-dataset/code?sort=published)
 
 ## Web Scrapping Data from Flipkart Credit goes to [KANAV BANSAL](https://www.linkedin.com/in/kanavbansal/) SIR 😊
 
